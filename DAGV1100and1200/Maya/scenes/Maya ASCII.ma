@@ -1,6 +1,6 @@
 //Maya ASCII 2027 scene
 //Name: Maya ASCII.ma
-//Last modified: Wed, Sep 09, 2026 09:07:50 AM
+//Last modified: Wed, Sep 09, 2026 09:10:07 AM
 //Codeset: 1252
 requires maya "2027";
 requires -nodeType "materialxStack" -nodeType "MaterialXSurfaceShader" -dataType "MxDocumentStackData"
@@ -13,11 +13,11 @@ fileInfo "product" "Maya 2027";
 fileInfo "version" "2027";
 fileInfo "cutIdentifier" "202607171511-52c21617ee";
 fileInfo "osv" "Windows 11 Home v2009 (Build: 26200)";
-fileInfo "UUID" "91451FDF-4A01-A990-BA95-20B84A4D0834";
+fileInfo "UUID" "45913210-4668-38D1-E41C-99B34172299A";
 createNode transform -s -n "persp";
 	rename -uid "0497EB76-4750-1B12-08A1-1D8413844D1F";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" -1.7179756920187619 8.9553012250778465 -9.185762845263568 ;
+	setAttr ".t" -type "double3" -31.944347546087805 19.57051123429893 -32.003258796331757 ;
 	setAttr ".r" -type "double3" 156.46281665033243 -48.748905965959551 179.99999999999997 ;
 	setAttr ".rp" -type "double3" 1.4988010832439613e-15 0 0 ;
 	setAttr ".rpt" -type "double3" 1.5389926017044836e-15 -4.0099136164313138e-15 1.8445427719956438e-14 ;
@@ -25,7 +25,7 @@ createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "71BA69A2-45A2-8CE7-3A89-6A9F9533F2CB";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 34.999999999999979;
-	setAttr ".coi" 7.4077614140576618;
+	setAttr ".coi" 46.274421591213596;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
@@ -85,6 +85,7 @@ createNode camera -s -n "sideShape" -p "side";
 	setAttr ".ai_translator" -type "string" "orthographic";
 createNode transform -n "Floor";
 	rename -uid "45F225A8-4409-0AAD-AEF5-E5A174241967";
+	setAttr ".t" -type "double3" 0.26916354901570205 0 0 ;
 	setAttr ".rp" -type "double3" 0 -0.24999998509883881 0.013700485229492188 ;
 	setAttr ".sp" -type "double3" 0 -0.24999998509883881 0.013700485229492188 ;
 createNode mesh -n "Floor_Mesh" -p "Floor";
